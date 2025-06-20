@@ -12,7 +12,7 @@ const BloodBankLogin = () => {
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5001/api/auth/login", { email, password });
+      const response = await axios.post("https://blood-bank-management-reot.onrender.com/api/auth/login", { email, password });
       localStorage.setItem("token", response.data.token);
       alert("Login successful!");
       navigate("/admin");

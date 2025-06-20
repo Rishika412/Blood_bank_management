@@ -85,7 +85,7 @@ export default function DonorRegistration() {
 
   const onSubmit = async (data: Donor) => {
     try {
-      const response = await axios.post('http://localhost:5001/api/donors/register', data);
+      const response = await axios.post('https://blood-bank-management-reot.onrender.com/api/donors/register', data);
       console.log('Donor registered successfully:', response.data);
       setShowConfetti(true);
       setIsOpen(true);

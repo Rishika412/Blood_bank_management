@@ -66,7 +66,7 @@ export default function HospitalRegistration() {
 
   const onSubmit = async (data: Hospital) => {
     try {
-      const response = await fetch('http://localhost:5001/api/hospitals', {
+      const response = await fetch('https://blood-bank-management-reot.onrender.com/api/hospitals', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),

@@ -33,7 +33,7 @@ function AdminDashboard() {
 
   const fetchDonors = async () => {
     try {
-      const response = await axios.get('http://localhost:5001/api/donors/all');
+      const response = await axios.get('https://blood-bank-management-reot.onrender.com/api/donors/all');
       console.log("***********" , response.data)
       setDonors(response.data);
     } catch (error) {
@@ -43,7 +43,7 @@ function AdminDashboard() {
 
   const fetchHospitals = async () => {
     try {
-      const response = await axios.get('http://localhost:5001/api/hospitals');
+      const response = await axios.get('https://blood-bank-management-reot.onrender.com/api/hospitals');
       
       setHospitals(response.data);
     } catch (error) {
